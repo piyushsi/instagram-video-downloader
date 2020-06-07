@@ -1,0 +1,18 @@
+{
+  "icons": {
+    "16": "src/icon16.png",
+    "48": "src/icon48.png",
+    "128": "src/icon128.png"
+  },
+  "manifest_version": 2,
+  "name": "Instagram Video Downloader",
+  "description": "Download Your Instagram Video from official SIte",
+  "version": "1.0.0",
+  "author": "Piyush Sinha",
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["src/loader.js"]
+    }
+  ]
+}
