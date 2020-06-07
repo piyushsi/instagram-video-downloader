@@ -8,18 +8,20 @@ function alertFunc() {
 	Array.from(document.querySelectorAll('.tWeCl')).map((video) => {
 		var dd = document.createElement('a');
 		dd.className = 'injected_insta_video_downloader';
-		dd.innerHTML = 'Click here to Download this Video';
+		dd.innerText = 'Click here to Download this Video';
 		dd.style.textAlign = 'center';
 		dd.style.background = 'linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)';
 		dd.style.color = 'white';
 		dd.style.cursor = 'pointer';
 		dd.style.fontSiz = '1rem';
+
 		// dd.target = '_blank';
 		// dd.type = 'video/mp4';
 		// dd.setAttribute('href', video.src);
 		// dd.setAttribute('download', `${video.src.split('/')[5].split('?')[0]}`);
 
 		dd.addEventListener('click', () => {
+			dd.innerText="Downloading is being Started....";
 			fetch(video.src)
 				.then((response) => response.blob())
 				.then((blob) => {
@@ -62,13 +64,14 @@ function alertFunc() {
 								.split('>')[1] +
 							' - ' +
 							Array.from(document.getElementsByClassName('C4VMK'))[0]
-								.innerHTML.split('span')[3]
+								.innerHTML.split('span')[1]
 								.split('<')[0]
 								.split('>')[1];
 					}
 
 					Hidden.click();
 					window.URL.revokeObjectURL(url);
+					dd.innerText="Click here to Download this Video Again";
 				});
 		});
 		if (

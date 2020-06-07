@@ -6,9 +6,12 @@
   },
   "manifest_version": 2,
   "name": "Instagram Video Downloader",
-  "description": "Download Your Instagram Video from official SIte",
-  "version": "1.0.0",
+  "description": "Download any Instagram Video from official Site",
+  "version": "2.1.0",
   "author": "Piyush Sinha",
+  "permissions": [
+    "downloads"
+  ],
   "content_scripts": [
     {
       "matches": ["https://www.instagram.com/*"],
