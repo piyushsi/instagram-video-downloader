@@ -5,9 +5,9 @@
     "128": "src/icon128.png"
   },
   "manifest_version": 2,
-  "name": "Instagram Video Downloader",
-  "description": "Download any Instagram Video from official Site",
-  "version": "2.1.0",
+  "name": "Insta Video Downloader",
+  "description": "Download any Insta**** Video from official Site",
+  "version": "2.2.0",
   "author": "Piyush Sinha",
   "permissions": [
     "downloads"
