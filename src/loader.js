@@ -74,7 +74,7 @@ function fetchFunc() {
 			)
 		) {
 		} else {
-			video.parentElement.parentElement.parentElement.parentElement.parentElement.append(dd);
+			video.parentElement.parentElement.parentElement.parentElement.parentElement.append(newVideo);
 		}
 	});
 }
